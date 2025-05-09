@@ -28,7 +28,7 @@ Select *from test_identity;
 
 ---2---
 drop table if exists  data_types_demo;
-CREATE TABLE data_types_demo (
+CREATE TABLE data_types_demo(
     id INT,
     name NVARCHAR(100),
     birthdate DATE,
@@ -73,7 +73,7 @@ CREATE TABLE worker (
 );
 
 BULK INSERT worker
-FROM 'C:\Users\HP\Documents\SQL\My Project\clone\lesson-2\homework\workers.csv'
+FROM 'C:\Users\HP\Downloads\workers.csv'
 WITH (
     FIELDTERMINATOR = ',',
     ROWTERMINATOR = '\n',
